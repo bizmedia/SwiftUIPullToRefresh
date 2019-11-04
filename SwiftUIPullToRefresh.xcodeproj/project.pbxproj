@@ -15,6 +15,11 @@
 		FD81DA1223707A7C00A1EE36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD81DA1023707A7C00A1EE36 /* LaunchScreen.storyboard */; };
 		FD81DA1D23707A7D00A1EE36 /* SwiftUIPullToRefreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81DA1C23707A7D00A1EE36 /* SwiftUIPullToRefreshTests.swift */; };
 		FD81DA2823707A7D00A1EE36 /* SwiftUIPullToRefreshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81DA2723707A7D00A1EE36 /* SwiftUIPullToRefreshUITests.swift */; };
+		FD81DA3823707B4600A1EE36 /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81DA3723707B4600A1EE36 /* RefreshableScrollView.swift */; };
+		FD81DA3E237082C900A1EE36 /* DogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81DA3C237082C900A1EE36 /* DogStore.swift */; };
+		FD81DA3F237082C900A1EE36 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81DA3D237082C900A1EE36 /* Store.swift */; };
+		FD81DA422370846C00A1EE36 /* DogsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81DA412370846C00A1EE36 /* DogsAPI.swift */; };
+		FD81DA44237087AB00A1EE36 /* dependensies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81DA43237087AB00A1EE36 /* dependensies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		FD81DA2323707A7D00A1EE36 /* SwiftUIPullToRefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIPullToRefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD81DA2723707A7D00A1EE36 /* SwiftUIPullToRefreshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPullToRefreshUITests.swift; sourceTree = "<group>"; };
 		FD81DA2923707A7D00A1EE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD81DA3723707B4600A1EE36 /* RefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
+		FD81DA3C237082C900A1EE36 /* DogStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogStore.swift; sourceTree = "<group>"; };
+		FD81DA3D237082C900A1EE36 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		FD81DA412370846C00A1EE36 /* DogsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAPI.swift; sourceTree = "<group>"; };
+		FD81DA43237087AB00A1EE36 /* dependensies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dependensies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +111,13 @@
 			children = (
 				FD81DA0523707A7A00A1EE36 /* AppDelegate.swift */,
 				FD81DA0723707A7A00A1EE36 /* SceneDelegate.swift */,
+				FD81DA3723707B4600A1EE36 /* RefreshableScrollView.swift */,
 				FD81DA0923707A7A00A1EE36 /* ContentView.swift */,
 				FD81DA0B23707A7C00A1EE36 /* Assets.xcassets */,
 				FD81DA1023707A7C00A1EE36 /* LaunchScreen.storyboard */,
 				FD81DA1323707A7C00A1EE36 /* Info.plist */,
 				FD81DA0D23707A7C00A1EE36 /* Preview Content */,
+				FD81DA3B237082C900A1EE36 /* Model */,
 			);
 			path = SwiftUIPullToRefresh;
 			sourceTree = "<group>";
@@ -134,6 +146,25 @@
 				FD81DA2923707A7D00A1EE36 /* Info.plist */,
 			);
 			path = SwiftUIPullToRefreshUITests;
+			sourceTree = "<group>";
+		};
+		FD81DA3B237082C900A1EE36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD81DA3D237082C900A1EE36 /* Store.swift */,
+				FD81DA3C237082C900A1EE36 /* DogStore.swift */,
+				FD81DA43237087AB00A1EE36 /* dependensies.swift */,
+				FD81DA402370844C00A1EE36 /* dependencies */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD81DA402370844C00A1EE36 /* dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				FD81DA412370846C00A1EE36 /* DogsAPI.swift */,
+			);
+			path = dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD81DA0623707A7A00A1EE36 /* AppDelegate.swift in Sources */,
+				FD81DA422370846C00A1EE36 /* DogsAPI.swift in Sources */,
 				FD81DA0823707A7A00A1EE36 /* SceneDelegate.swift in Sources */,
+				FD81DA3F237082C900A1EE36 /* Store.swift in Sources */,
+				FD81DA44237087AB00A1EE36 /* dependensies.swift in Sources */,
 				FD81DA0A23707A7A00A1EE36 /* ContentView.swift in Sources */,
+				FD81DA3823707B4600A1EE36 /* RefreshableScrollView.swift in Sources */,
+				FD81DA3E237082C900A1EE36 /* DogStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
